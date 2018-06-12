@@ -1,6 +1,6 @@
 package oca.basics;
 import java.util.Scanner;
-public class triangleSum {
+public class TriangleSum {
 public static void main (String [] args) {
 	Scanner in = new Scanner (System.in);
 	System.out.println("Enter side 1: ");
@@ -10,10 +10,10 @@ public static void main (String [] args) {
 	System.out.println("Enter side 3: ");
 	double s3 = in.nextInt();
 	if (s1+s2 > s3 && s2+s3 > s1 && s1+s3>s2 ){
-		System.out.println("Valid triangle.");
+		System.out.println("Perimeter is "+(s1+s2+s3));
 		
 	} else {
-		System.out.println("Not valid.");
+		System.out.println("Not A valid triangle");
 	}
 }
 }
